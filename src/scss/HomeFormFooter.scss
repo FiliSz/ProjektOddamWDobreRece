@@ -1,0 +1,133 @@
+@import './settings/fonts';
+@import './settings/colors';
+
+.formFooterCnt{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('../assets/Background-Contact-Form.jpg');
+    background-size: cover;
+    font-family: $font-base;
+    button{
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: transparent;
+            padding: 1rem 4rem 1rem 4rem;
+            font-family: $font-base;
+            font-weight: 300;
+            font-size: 1.5rem;
+            width: 10rem;
+    }
+
+    .wallpaperCnt{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 1.5rem;
+        }
+        .formInputs{
+            width: 70vh;
+            display: flex;
+            margin-top: 1rem;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+            .inputBox1, .inputBox2{
+                position: relative;
+                justify-content: space-between;
+                flex-direction: row;
+                
+                margin: 0 10px 0 10px;
+                width: 250px;
+                    :valid ~ span,
+                    :focus ~ span
+                    {
+                        
+                        transform: translateX(10px) translateY(-7px);
+                        font-size: 0.9rem;
+                        padding: 30px 0px;
+                        
+                    }
+                input{
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    color: $color-forth;
+                    font-size: 1.1rem;
+                    border-bottom: 1px solid black;
+                }
+                span{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    padding: 10px 0px;
+                    pointer-events: none;
+                    font-size: 1rem;
+                    transition: 0.7s;
+                }
+            }
+
+            .textareaBox{
+                margin: 5vh auto 0 auto;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                height: 30vh;
+                width: 100vh;
+                :valid ~ span,
+                :focus ~ span{
+                    transform: translate(10px) translateY(-220px);
+                    font-size: 0.9rem;
+                    padding: 30px 0px;
+                }
+                
+                textarea{
+                    resize: none;
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    color: $color-forth;
+                    font-size: 1.1rem;
+                    border-bottom: 1px solid black;
+
+                }
+
+                span{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 10px 0;
+                    pointer-events: none;
+                    font-size: 1rem;
+                    transition: 0.7s;
+                }
+            }
+        }
+        
+        
+    }
+}
+
+.errorInfo{
+    display: none;
+    color: red;
+}
+input:invalid ~ .errorInfo{
+    display: flex;
+
+}
+input:invalid ~ .infoo{
+    display: none;
+
+}

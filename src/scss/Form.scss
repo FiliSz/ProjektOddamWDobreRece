@@ -1,0 +1,50 @@
+@import './settings/fonts';
+@import './settings/colors';
+
+
+.navBarForm{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/Form-Hero-Image.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: -250px 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    .formSquare{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        margin: 15px;
+        font-size: 0.75rem;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        p{  
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width: 130px;
+            height: 130px;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+
+        }
+
+    }
+}

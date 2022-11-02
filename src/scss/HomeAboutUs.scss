@@ -1,0 +1,39 @@
+@import './settings/fonts';
+@import './settings/colors';
+
+.containerPeople{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    .aboutUs{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: $color-first;
+        .desc{
+            margin-top: 10vh;
+            width: 50%;
+            :first-child{
+                font-size: 1.5rem;
+            }
+        }
+        .signature{
+            margin-top: 5vh;
+            margin-left: 30vh;
+        }
+    }
+    .peopleImg{
+        width: 50%;
+        background-image: url('../assets/People.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -50px;
+    }
+        
+    
+
+}

@@ -1,0 +1,73 @@
+@import './settings/fonts';
+@import './settings/colors';
+
+.stepContainer{
+    height: 624px;
+    width: 100%;
+    margin-top: 50px;
+    
+    .stepTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        div{
+            margin-bottom: 1.25rem;
+        }
+    }
+   
+    .greyContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-first;
+        height: 325px;
+        width: 100%;
+        .allIconsContainer{
+            display: flex;
+            .iconContainer{
+                text-align: center;
+                margin: auto;
+                width: 15%;
+                .lines{
+                    width: 50%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 1px;
+                    border: 0;
+                    background: black;
+                }
+                button{
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                    background-color: transparent;
+                    padding: 1rem 4rem 1rem 4rem;
+                    font-family: $font-base;
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    width: 10rem;
+                }
+            }
+        }
+        
+    }
+    button{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        background-color: transparent;
+        padding: 1rem 4rem 1rem 4rem;
+        font-family: $font-base;
+        font-weight: 300;
+        font-size: 1.5rem;
+        width: 10rem;
+    }
+}

@@ -1,0 +1,80 @@
+@import './settings/fonts';
+@import './settings/colors';
+
+.navBar{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/Home-Hero-Image.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: -500px 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-weight: 600;
+}
+
+ul{
+    list-style: none;
+}
+
+.firstLine{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    li{
+        color: $color-forth;
+        margin-right: 2rem;
+        font-size: 0.75rem;
+        padding: 3px;
+    }
+    :nth-child(2){
+        border: 1px solid $color-forth;
+    }
+}
+.secondLine{
+    display: flex;
+    justify-content: flex-end;
+    li{
+        margin-right: 2rem;
+        padding: 4px;
+    }
+
+}
+
+.homePageFirst{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40vh;
+    margin-left: auto;
+    margin-top: 15vh;
+    margin-right: 15vh;
+    p{
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-family: $font-alt;
+        font-weight: 500;
+        margin-top: 0;
+    }
+    div{
+        display: flex;
+        button{
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            background-color: transparent;
+            padding: 1rem 4rem 1rem 4rem;
+            font-family: $font-base;
+            font-weight: 300;
+            font-size: 1.5rem;
+            width: 10rem;
+        
+            
+        }
+    }
+}
+

@@ -1,0 +1,72 @@
+@import './settings/fonts';
+@import './settings/colors';
+
+
+.firstStepCnt{
+
+    
+    
+    .firstStepForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 1.5rem;
+        margin-left: 5rem;
+        font-size: 2rem;
+        .buttonWindow{
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            margin-top: 500px;
+        }
+        button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 1rem;
+            background-color: transparent;
+            padding: 15px 15px;
+            font-family: $font-base;
+            font-weight: 300;
+            font-size: 1.5rem;
+            width: 10rem;
+        }
+        span{
+            font-weight: 500;
+        }
+        .checkboxSecondStep{
+            
+            display: flex;
+            flex-direction: row;
+            padding: 42px 0;
+            height: 40px;
+            font-size: 1.75rem;
+            .customSelect{
+                border: 1px solid black;
+                width: 300px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 25px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin-left: 29.3rem;
+                margin-top: 50px;
+                border: 1px solid black;
+                padding: 0;
+                
+                    
+                    
+                    .customList{
+                        margin: 0 30px;
+                        text-align: center;
+                    }
+            }
+        }
+    }
+}
+
+
